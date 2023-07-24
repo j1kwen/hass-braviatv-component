@@ -1,0 +1,18 @@
+{
+  "domain": "braviatv",
+  "name": "Sony Bravia TV",
+  "codeowners": ["@j1kwen", "@bieniu", "@Drafteed"],
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/braviatv",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "loggers": ["pybravia"],
+  "requirements": ["pybravia==0.3.3", "adbutils>=1.2.12"],
+  "ssdp": [
+    {
+      "st": "urn:schemas-sony-com:service:ScalarWebAPI:1",
+      "manufacturer": "Sony Corporation"
+    }
+  ],
+  "version": "1.0.0"
+}
